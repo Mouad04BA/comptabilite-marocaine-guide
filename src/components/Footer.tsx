@@ -27,7 +27,6 @@ export function Footer() {
             <h4 className="font-medium mb-4">Ressources</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/actualites" className="hover:text-primary">Actualités</Link></li>
-              <li><Link to="/import-export" className="hover:text-primary">Import/Export</Link></li>
               <li><Link to="/depot-bilan" className="hover:text-primary">Dépôt de Bilan</Link></li>
               <li><Link to="/ressources" className="hover:text-primary">Ressources Utiles</Link></li>
             </ul>

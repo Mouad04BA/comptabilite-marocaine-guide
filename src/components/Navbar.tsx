@@ -13,7 +13,6 @@ export function Navbar() {
     { title: "Plan Comptable", href: "/plan-comptable" },
     { title: "Échéances Fiscales", href: "/echeances" },
     { title: "Actualités", href: "/actualites" },
-    { title: "Import/Export", href: "/import-export" },
     { title: "Dépôt de Bilan", href: "/depot-bilan" },
     { title: "Ressources", href: "/ressources" },
     { title: "Contact", href: "/contact" },

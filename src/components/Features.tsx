@@ -1,5 +1,5 @@
 
-import { BookOpen, Calendar, Newspaper, TrendingUp, FileText, Landmark } from "lucide-react";
+import { BookOpen, Calendar, Newspaper, FileText, Landmark } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
@@ -22,12 +22,6 @@ export function Features() {
       title: "Actualités Économiques",
       description: "Dernières informations économiques et financières qui impactent la comptabilité au Maroc.",
       href: "/actualites"
-    },
-    {
-      icon: TrendingUp,
-      title: "Import / Export",
-      description: "Normes comptables pour les opérations d'import/export et informations fiscales.",
-      href: "/import-export"
     },
     {
       icon: FileText,
