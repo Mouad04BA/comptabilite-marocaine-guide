@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ressources Utiles | ComptaMaroc</title>
+  <meta name="description" content="Ressources, guides et outils essentiels pour les professionnels de la comptabilité au Maroc.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .resources-section {
+      margin-bottom: 3rem;
+    }
+    
+    .resources-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .resource-card {
+      background-color: var(--card);
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 6px var(--shadow);
+      overflow: hidden;
+      transition: transform var(--transition);
+    }
+    
+    .resource-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .resource-header {
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .resource-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(193, 39, 45, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .resource-icon i {
+      font-size: 1.25rem;
+      color: var(--primary);
+    }
+    
+    .resource-title {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    
+    .resource-content {
+      padding: 0 1.25rem 1.25rem;
+    }
+    
+    .resource-description {
+      color: var(--text);
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .resource-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 0.875rem;
+      transition: color var(--transition);
+    }
+    
+    .resource-link:hover {
+      color: var(--secondary);
+    }
+    
+    .resource-link i {
+      margin-left: 0.25rem;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan-comptable.html">Plan Comptable</a></li>
+          <li><a href="echeances.html">Échéances Fiscales</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html" class="active">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Ressources Utiles</h1>
+        <p class="page-description">
+          Guides, documents et liens essentiels pour les professionnels de la comptabilité au Maroc
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-container">
+          <div class="resources-section">
+            <h2 class="resources-title">Documents officiels</h2>
+            <div class="resources-grid">
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <h3 class="resource-title">Code Général des Impôts</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Version actualisée du CGI avec les dernières modifications fiscales.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <h3 class="resource-title">Plan Comptable Marocain</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Document officiel du Plan Comptable Général Marocain.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <h3 class="resource-title">Loi de Finances 2025</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Texte intégral de la Loi de Finances avec les dispositions fiscales.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resources-section">
+            <h2 class="resources-title">Institutions et organismes</h2>
+            <div class="resources-grid">
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-landmark"></i>
+                  </div>
+                  <h3 class="resource-title">Direction Générale des Impôts</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Site officiel de la DGI pour les services fiscaux en ligne et formulaires.</p>
+                  <a href="https://www.tax.gov.ma/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-landmark"></i>
+                  </div>
+                  <h3 class="resource-title">Office Marocain de la Propriété Industrielle et Commerciale</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Procédures d'enregistrement des entreprises et marques.</p>
+                  <a href="https://www.ompic.ma/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <h3 class="resource-title">Ordre des Experts Comptables</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Ressources professionnelles pour les experts comptables et auditeurs.</p>
+                  <a href="https://www.oecmaroc.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resources-section">
+            <h2 class="resources-title">Outils et modèles</h2>
+            <div class="resources-grid">
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-download"></i>
+                  </div>
+                  <h3 class="resource-title">Modèles de liasse fiscale</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Modèles à télécharger pour préparer vos déclarations fiscales.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <h3 class="resource-title">Guide des déclarations TVA</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Guide pratique pour compléter correctement vos déclarations de TVA.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="resource-card">
+                <div class="resource-header">
+                  <div class="resource-icon">
+                    <i class="fas fa-download"></i>
+                  </div>
+                  <h3 class="resource-title">Calculateur d'impôts</h3>
+                </div>
+                <div class="resource-content">
+                  <p class="resource-description">Outil en ligne pour estimer vos charges fiscales.</p>
+                  <a href="#" class="resource-link">
+                    Consulter <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

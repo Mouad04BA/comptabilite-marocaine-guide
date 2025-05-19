@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procédure de Dépôt de Bilan | ComptaMaroc</title>
+  <meta name="description" content="Guide complet sur les procédures et exigences pour le dépôt de bilan au Maroc.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    
+    .step-card {
+      text-align: center;
+      background-color: var(--card);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px var(--shadow);
+      transition: transform var(--transition);
+    }
+    
+    .step-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .step-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(193, 39, 45, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 1rem;
+    }
+    
+    .step-icon i {
+      font-size: 1.75rem;
+      color: var(--primary);
+    }
+    
+    .step-title {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    
+    .accordion-item {
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    
+    .accordion-header {
+      padding: 1rem 1.5rem;
+      background-color: var(--card);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    
+    .accordion-header h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    
+    .accordion-content {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      display: none;
+    }
+    
+    .accordion-content.active {
+      display: block;
+    }
+    
+    .accordion-header i {
+      transition: transform var(--transition);
+    }
+    
+    .accordion-header.active i {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan-comptable.html">Plan Comptable</a></li>
+          <li><a href="echeances.html">Échéances Fiscales</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="depot-bilan.html" class="active">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Procédure de Dépôt de Bilan</h1>
+        <p class="page-description">
+          Guide pratique pour comprendre les obligations légales et les étapes du dépôt de bilan au Maroc
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-container">
+          <div class="steps">
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <h3 class="step-title">Étape 1: Préparation des états financiers</h3>
+              <p>Établissement du bilan, compte de résultat, état des soldes de gestion, tableau de financement et ETIC.</p>
+            </div>
+            
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <h3 class="step-title">Étape 2: Validation par l'assemblée générale</h3>
+              <p>Approbation des comptes par l'assemblée générale ordinaire dans les 6 mois suivant la clôture.</p>
+            </div>
+            
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 class="step-title">Étape 3: Dépôt au greffe du tribunal</h3>
+              <p>Les états financiers doivent être déposés au greffe du tribunal de commerce dans le mois suivant l'approbation.</p>
+            </div>
+            
+            <div class="step-card">
+              <div class="step-icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <h3 class="step-title">Étape 4: Déclaration fiscale</h3>
+              <p>Soumission de la liasse fiscale à l'administration fiscale au plus tard 3 mois après la clôture de l'exercice.</p>
+            </div>
+          </div>
+
+          <h2 class="section-title">Questions fréquentes</h2>
+          <div class="faq-accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Quels documents constituent la liasse fiscale au Maroc ?</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>La liasse fiscale comprend le bilan, le compte de produits et charges (CPC), l'état des soldes de gestion (ESG), le tableau de financement et l'état des informations complémentaires (ETIC).</p>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Quand faut-il déposer la liasse fiscale ?</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>La liasse fiscale doit être déposée dans les 3 mois suivant la date de clôture de l'exercice fiscal. Pour les sociétés clôturant au 31 décembre, la date limite est le 31 mars de l'année suivante.</p>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Quelles sont les sanctions en cas de retard de dépôt ?</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Le retard de dépôt de la liasse fiscale entraîne une majoration de 15% sur le montant de l'impôt dû. Des pénalités supplémentaires de 5% s'appliquent en cas de retard de paiement, avec un minimum de 500 dirhams.</p>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <h3>Le dépôt électronique est-il obligatoire au Maroc ?</h3>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Oui, depuis 2017, le dépôt électronique via la plateforme SIMPL (Système Intégré de Taxation) est obligatoire pour toutes les entreprises soumises à l'IS, quelle que soit leur taille.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+  <script>
+    // Accordion functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+      
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          header.classList.toggle('active');
+          const content = header.nextElementSibling;
+          content.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

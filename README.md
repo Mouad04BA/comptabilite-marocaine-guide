@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
 
-## Project info
+# ComptaMaroc - Guide de la Comptabilité Marocaine
 
-**URL**: https://lovable.dev/projects/c41f3b7f-6bf1-4efd-8267-37c2f97c03ca
+Ce projet est un site web statique sur la comptabilité marocaine, conçu pour être déployé sur GitHub Pages ou tout service d'hébergement de sites statiques.
 
-## How can I edit this code?
+## Caractéristiques
 
-There are several ways of editing your application.
+- Plan comptable marocain détaillé
+- Calendrier des échéances fiscales
+- Actualités économiques et financières
+- Guide de dépôt de bilan
+- Ressources utiles pour les professionnels
+- Mode sombre/clair
+- Complètement responsive
+- Fonctionne entièrement offline
 
-**Use Lovable**
+## Déploiement sur GitHub Pages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c41f3b7f-6bf1-4efd-8267-37c2f97c03ca) and start prompting.
+Pour déployer ce site sur GitHub Pages :
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Créez un nouveau repository sur GitHub ou utilisez un existant
+2. Téléchargez tous les fichiers de ce projet dans votre repository
+3. Dans les paramètres du repository, allez à la section "GitHub Pages"
+4. Dans "Source", sélectionnez la branche principale (main ou master)
+5. Cliquez sur "Save"
+6. Votre site sera disponible à l'adresse `https://[votre-nom-utilisateur].github.io/[nom-du-repository]/`
 
-**Use your preferred IDE**
+## Structure des fichiers
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- `index.html` - Page d'accueil
+- `plan-comptable.html` - Plan comptable marocain
+- `echeances.html` - Échéances fiscales
+- `actualites.html` - Actualités économiques et financières
+- `depot-bilan.html` - Guide de dépôt de bilan
+- `ressources.html` - Ressources utiles
+- `contact.html` - Page de contact
+- `mentions-legales.html` - Mentions légales
+- `politique-confidentialite.html` - Politique de confidentialité
+- `css/style.css` - Feuille de style principale
+- `js/main.js` - Script JavaScript principal
+- `favicon.ico` - Favicon du site
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Personnalisation
 
-Follow these steps:
+### Modifier les couleurs
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Les principales couleurs du site sont définies en variables CSS dans le fichier `css/style.css` :
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```css
+:root {
+  --primary: #c1272d;
+  --secondary: #006233;
+  /* autres variables */
+}
 ```
 
-**Edit a file directly in GitHub**
+### Ajouter du contenu
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Pour ajouter du contenu à une page existante, localisez le fichier HTML correspondant et modifiez-le selon vos besoins.
 
-**Use GitHub Codespaces**
+### Ajouter une nouvelle page
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Créez un nouveau fichier HTML en vous basant sur un fichier existant
+2. Mettez à jour la navigation dans chaque page pour inclure un lien vers la nouvelle page
 
-## What technologies are used for this project?
+## Fonctionnalités client-side
 
-This project is built with:
+- Le formulaire de contact simule l'envoi (les données ne sont pas réellement envoyées)
+- Le thème clair/sombre est sauvegardé localement dans le navigateur
+- Les accordéons et onglets fonctionnent avec JavaScript vanilla
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Licence
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c41f3b7f-6bf1-4efd-8267-37c2f97c03ca) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Ce projet est disponible sous licence MIT. Vous êtes libre de l'utiliser, le modifier et le distribuer selon vos besoins.

@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Comptable Marocain - ComptaMaroc</title>
+  <meta name="description" content="Consultez le plan comptable marocain détaillé par classes et comptes.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan-comptable.html" class="active">Plan Comptable</a></li>
+          <li><a href="echeances.html">Échéances Fiscales</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Plan Comptable Marocain</h1>
+        <p class="page-description">
+          Le Plan Comptable Marocain est structuré en sept classes de comptes. Consultez ci-dessous les détails de chaque classe et les comptes qui les composent.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-container">
+          <div class="tabs">
+            <div class="tab active" data-tab="classe1">Classe 1</div>
+            <div class="tab" data-tab="classe2">Classe 2</div>
+            <div class="tab" data-tab="classe3">Classe 3</div>
+            <div class="tab" data-tab="classe4">Classe 4</div>
+            <div class="tab" data-tab="classe5">Classe 5</div>
+            <div class="tab" data-tab="classe6">Classe 6</div>
+            <div class="tab" data-tab="classe7">Classe 7</div>
+          </div>
+
+          <div id="classe1" class="tab-content active">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 1 - Comptes de financement permanent</h2>
+                <p class="card-subtitle">Capitaux propres, emprunts, provisions durables pour risques et charges.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>11:</strong> Capital et réserves</li>
+                  <li><strong>12:</strong> Résultats nets en instance d'affectation</li>
+                  <li><strong>13:</strong> Résultats nets de l'exercice</li>
+                  <li><strong>14:</strong> Dettes de financement</li>
+                  <li><strong>15:</strong> Provisions durables pour risques et charges</li>
+                  <li><strong>16:</strong> Comptes de liaison des établissements et succursales</li>
+                  <li><strong>17:</strong> Écarts de conversion - Passif</li>
+                  <li><strong>18:</strong> Dettes de financement diverses</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe2" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 2 - Comptes d'actif immobilisé</h2>
+                <p class="card-subtitle">Immobilisations en non-valeurs, incorporelles, corporelles et financières.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>21:</strong> Immobilisations en non-valeurs</li>
+                  <li><strong>22:</strong> Immobilisations incorporelles</li>
+                  <li><strong>23:</strong> Immobilisations corporelles</li>
+                  <li><strong>24:</strong> Immobilisations financières</li>
+                  <li><strong>25:</strong> Immobilisations en cours</li>
+                  <li><strong>27:</strong> Écarts de conversion - Actif</li>
+                  <li><strong>28:</strong> Amortissements des immobilisations</li>
+                  <li><strong>29:</strong> Provisions pour dépréciation des immobilisations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe3" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 3 - Comptes d'actif circulant (hors trésorerie)</h2>
+                <p class="card-subtitle">Stocks, créances de l'actif circulant, titres et valeurs de placement.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>31:</strong> Stocks</li>
+                  <li><strong>34:</strong> Créances de l'actif circulant</li>
+                  <li><strong>35:</strong> Titres et valeurs de placement</li>
+                  <li><strong>37:</strong> Écarts de conversion - Actif (éléments circulants)</li>
+                  <li><strong>39:</strong> Provisions pour dépréciation des comptes de l'actif circulant</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe4" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 4 - Comptes de passif circulant (hors trésorerie)</h2>
+                <p class="card-subtitle">Dettes du passif circulant, autres provisions pour risques et charges.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>44:</strong> Dettes du passif circulant</li>
+                  <li><strong>45:</strong> Autres provisions pour risques et charges</li>
+                  <li><strong>47:</strong> Écarts de conversion - Passif (éléments circulants)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe5" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 5 - Comptes de trésorerie</h2>
+                <p class="card-subtitle">Trésorerie actif et passif.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>51:</strong> Trésorerie - Actif</li>
+                  <li><strong>55:</strong> Trésorerie - Passif</li>
+                  <li><strong>59:</strong> Provisions pour dépréciation des comptes de trésorerie</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe6" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 6 - Comptes de charges</h2>
+                <p class="card-subtitle">Charges d'exploitation, financières, non courantes.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>61:</strong> Charges d'exploitation</li>
+                  <li><strong>63:</strong> Impôts, taxes et charges assimilées</li>
+                  <li><strong>64:</strong> Charges de personnel</li>
+                  <li><strong>65:</strong> Autres charges d'exploitation</li>
+                  <li><strong>66:</strong> Charges financières</li>
+                  <li><strong>67:</strong> Charges non courantes</li>
+                  <li><strong>68:</strong> Dotations d'exploitation</li>
+                  <li><strong>69:</strong> Impôts sur les résultats</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="classe7" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Classe 7 - Comptes de produits</h2>
+                <p class="card-subtitle">Produits d'exploitation, financiers, non courants.</p>
+              </div>
+              <div class="card-body">
+                <ul class="compte-list">
+                  <li><strong>71:</strong> Produits d'exploitation</li>
+                  <li><strong>72:</strong> Produits des activités annexes</li>
+                  <li><strong>73:</strong> Variations des stocks de produits</li>
+                  <li><strong>74:</strong> Subventions d'exploitation</li>
+                  <li><strong>75:</strong> Autres produits d'exploitation</li>
+                  <li><strong>76:</strong> Produits financiers</li>
+                  <li><strong>77:</strong> Produits non courants</li>
+                  <li><strong>78:</strong> Reprises d'exploitation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

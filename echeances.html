@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Échéances Fiscales au Maroc - ComptaMaroc</title>
+  <meta name="description" content="Calendrier des échéances fiscales au Maroc: IS, IR, TVA. Tous les délais et dates importantes pour vos déclarations fiscales.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .echeances-tabs {
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    
+    .echeances-tab {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--card);
+      border-radius: var(--radius-md);
+      box-shadow: 0 2px 4px var(--shadow);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    
+    .echeances-tab:hover {
+      transform: translateY(-3px);
+    }
+    
+    .echeances-tab.active {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .echeance-period {
+      margin-bottom: 2rem;
+    }
+    
+    .echeance-period h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .echeance-item {
+      padding: 1rem;
+      border-left: 3px solid var(--primary);
+      margin-bottom: 1.5rem;
+      background-color: var(--card);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      box-shadow: 0 2px 4px var(--shadow);
+    }
+    
+    .echeance-item h4 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .echeance-item p {
+      margin-bottom: 0.5rem;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    
+    .echeance-date {
+      font-weight: 700;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan-comptable.html">Plan Comptable</a></li>
+          <li><a href="echeances.html" class="active">Échéances Fiscales</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Échéances Fiscales au Maroc</h1>
+        <p class="page-description">
+          Retrouvez ci-dessous les principales échéances fiscales au Maroc pour l'IS, l'IR et la TVA.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-container">
+          <div class="alert alert-info">
+            <i class="fas fa-circle-info"></i>
+            <div>
+              <strong>Important:</strong> Les dates indiquées sont données à titre informatif. Vérifiez toujours auprès de la Direction Générale des Impôts pour toute modification récente.
+            </div>
+          </div>
+
+          <div class="echeances-tabs">
+            <div class="echeances-tab active" data-tab="is">Impôt sur les Sociétés</div>
+            <div class="echeances-tab" data-tab="ir">Impôt sur le Revenu</div>
+            <div class="echeances-tab" data-tab="tva">TVA</div>
+          </div>
+
+          <div id="is" class="echeances-content active">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Impôt sur les Sociétés (IS)</h2>
+              </div>
+              <div class="card-body">
+                <div class="echeance-period">
+                  <h3>Échéances Mensuelles</h3>
+                  <div class="echeance-item">
+                    <h4>Acomptes provisionnels</h4>
+                    <p>Paiement des acomptes provisionnels (20% de l'IS de l'exercice précédent)</p>
+                    <span class="echeance-date">Avant la fin du 3ème, 6ème et 9ème mois de l'exercice</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Trimestrielles</h3>
+                  <div class="echeance-item">
+                    <h4>IS des revenus de placements à revenu fixe</h4>
+                    <p>Versement de la retenue à la source sur les revenus payés à des tiers</p>
+                    <span class="echeance-date">Au cours du mois qui suit chaque trimestre</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Annuelles</h3>
+                  <div class="echeance-item">
+                    <h4>Déclaration du résultat fiscal</h4>
+                    <p>Déclaration du résultat fiscal (modèle 1 de l'IS)</p>
+                    <span class="echeance-date">Dans les 3 mois suivant la date de clôture de l'exercice</span>
+                  </div>
+                  <div class="echeance-item">
+                    <h4>Paiement du reliquat d'IS</h4>
+                    <p>Versement du complément d'IS dû après déduction des acomptes provisionnels</p>
+                    <span class="echeance-date">Avant l'expiration du 3ème mois suivant la date de clôture de l'exercice</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ir" class="echeances-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Impôt sur le Revenu (IR)</h2>
+              </div>
+              <div class="card-body">
+                <div class="echeance-period">
+                  <h3>Échéances Mensuelles</h3>
+                  <div class="echeance-item">
+                    <h4>IR sur salaires</h4>
+                    <p>Versement de l'IR retenu à la source sur les salaires</p>
+                    <span class="echeance-date">Avant le 1er du mois qui suit le mois de paiement</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Trimestrielles</h3>
+                  <div class="echeance-item">
+                    <h4>Acomptes provisionnels</h4>
+                    <p>Paiement des acomptes provisionnels (25% de l'IR de l'année précédente)</p>
+                    <span class="echeance-date">Avant le 1er avril, 1er juillet, 1er octobre et 1er janvier</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Annuelles</h3>
+                  <div class="echeance-item">
+                    <h4>Déclaration annuelle de revenu global</h4>
+                    <p>Dépôt de la déclaration du revenu global (modèle 1)</p>
+                    <span class="echeance-date">Avant le 1er mars de chaque année</span>
+                  </div>
+                  <div class="echeance-item">
+                    <h4>Déclaration annuelle des traitements et salaires</h4>
+                    <p>Déclaration des rémunérations versées (modèle 9421)</p>
+                    <span class="echeance-date">Avant le 1er mars de chaque année</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tva" class="echeances-content">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Taxe sur la Valeur Ajoutée (TVA)</h2>
+              </div>
+              <div class="card-body">
+                <div class="echeance-period">
+                  <h3>Échéances Mensuelles</h3>
+                  <div class="echeance-item">
+                    <h4>Déclaration et paiement pour CA > 1 000 000 MAD</h4>
+                    <p>Pour les contribuables dont le chiffre d'affaires dépasse 1 million de dirhams</p>
+                    <span class="echeance-date">Avant le 20 de chaque mois</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Trimestrielles</h3>
+                  <div class="echeance-item">
+                    <h4>Déclaration et paiement pour CA < 1 000 000 MAD</h4>
+                    <p>Pour les contribuables dont le chiffre d'affaires est inférieur à 1 million de dirhams</p>
+                    <span class="echeance-date">Avant le 20 du premier mois de chaque trimestre</span>
+                  </div>
+                </div>
+
+                <div class="echeance-period">
+                  <h3>Échéances Annuelles</h3>
+                  <div class="echeance-item">
+                    <h4>Régularisation de la TVA prorata</h4>
+                    <p>Calcul définitif du prorata de déduction et régularisation</p>
+                    <span class="echeance-date">Avec la déclaration du premier mois ou trimestre de l'année suivante</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+  <script>
+    // Tabs functionality for this specific page
+    const echeancesTabs = document.querySelectorAll('.echeances-tab');
+    const echeancesContents = document.querySelectorAll('.echeances-content');
+    
+    echeancesTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        echeancesTabs.forEach(t => t.classList.remove('active'));
+        echeancesContents.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding content
+        const tabId = tab.dataset.tab;
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

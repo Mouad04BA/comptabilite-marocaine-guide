@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités Économiques et Financières | ComptaMaroc</title>
+  <meta name="description" content="Dernières actualités économiques et financières impactant la comptabilité au Maroc.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .news-card {
+      background-color: var(--card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 4px 6px var(--shadow);
+      transition: transform var(--transition);
+    }
+    
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .news-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+    
+    .dark-theme .news-header {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .news-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: rgba(193, 39, 45, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .news-icon i {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    
+    .news-title {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    
+    .news-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    
+    .news-date {
+      padding-right: 0.5rem;
+    }
+    
+    .news-category {
+      padding-left: 0.5rem;
+      border-left: 1px solid var(--border);
+    }
+    
+    .news-content {
+      padding: 1.5rem;
+    }
+    
+    .news-description {
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    
+    .read-more {
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 0.875rem;
+      display: inline-flex;
+      align-items: center;
+      transition: color var(--transition);
+    }
+    
+    .read-more:hover {
+      color: var(--secondary);
+    }
+    
+    .read-more i {
+      margin-left: 0.25rem;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="plan-comptable.html">Plan Comptable</a></li>
+          <li><a href="echeances.html">Échéances Fiscales</a></li>
+          <li><a href="actualites.html" class="active">Actualités</a></li>
+          <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Actualités Économiques et Financières</h1>
+        <p class="page-description">
+          Restez informé des dernières actualités qui impactent la comptabilité et la finance au Maroc
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-header">
+              <div class="news-icon">
+                <i class="fas fa-landmark"></i>
+              </div>
+              <div>
+                <h2 class="news-title">Nouvelle loi de finances 2025</h2>
+                <div class="news-meta">
+                  <span class="news-date">05 avril 2025</span>
+                  <span class="news-category">Législation</span>
+                </div>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="news-description">Les principaux changements de la loi de finances 2025 et leur impact sur les entreprises marocaines.</p>
+              <a href="#" class="read-more">
+                Lire la suite <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-header">
+              <div class="news-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div>
+                <h2 class="news-title">Évolution du taux directeur de Bank Al-Maghrib</h2>
+                <div class="news-meta">
+                  <span class="news-date">28 mars 2025</span>
+                  <span class="news-category">Finance</span>
+                </div>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="news-description">Bank Al-Maghrib maintient son taux directeur à 3% lors de sa dernière réunion trimestrielle.</p>
+              <a href="#" class="read-more">
+                Lire la suite <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-header">
+              <div class="news-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div>
+                <h2 class="news-title">Digitalisation des déclarations fiscales</h2>
+                <div class="news-meta">
+                  <span class="news-date">15 mars 2025</span>
+                  <span class="news-category">Numérique</span>
+                </div>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="news-description">La DGI annonce de nouvelles fonctionnalités pour la plateforme SIMPL pour faciliter les déclarations en ligne.</p>
+              <a href="#" class="read-more">
+                Lire la suite <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-header">
+              <div class="news-icon">
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <div>
+                <h2 class="news-title">Normes IFRS : mise à jour 2025</h2>
+                <div class="news-meta">
+                  <span class="news-date">02 mars 2025</span>
+                  <span class="news-category">Normes Comptables</span>
+                </div>
+              </div>
+            </div>
+            <div class="news-content">
+              <p class="news-description">Les changements dans les normes IFRS applicables aux sociétés cotées marocaines à partir de 2025.</p>
+              <a href="#" class="read-more">
+                Lire la suite <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

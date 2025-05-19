@@ -1,26 +1,179 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>comptabilite-marocaine-guide</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComptaMaroc - Guide de la Comptabilité Marocaine</title>
+  <meta name="description" content="Guide complet de la comptabilité marocaine avec plan comptable, échéances fiscales, et ressources pour les professionnels.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Compta<span>Maroc</span></a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="plan-comptable.html">Plan Comptable</a></li>
+          <li><a href="echeances.html">Échéances Fiscales</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <meta property="og:title" content="comptabilite-marocaine-guide" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Guide Complet de la Comptabilité Marocaine</h1>
+          <p>Toutes les informations dont vous avez besoin pour comprendre et appliquer les règles comptables au Maroc</p>
+          <div class="cta-buttons">
+            <a href="plan-comptable.html" class="btn btn-primary">Explorer le Plan Comptable</a>
+            <a href="echeances.html" class="btn btn-secondary">Voir les Échéances</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Nos Services</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Plan Comptable</h3>
+            <p>Consultez le plan comptable marocain complet avec toutes les classes et sous-comptes.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <h3>Échéances Fiscales</h3>
+            <p>Ne manquez plus aucune échéance fiscale grâce à notre calendrier détaillé.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <h3>Actualités</h3>
+            <p>Restez informé des dernières nouvelles financières et économiques du Maroc.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3>Guides Pratiques</h3>
+            <p>Accédez à des guides clairs pour mieux comprendre les procédures comptables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Deadlines Section -->
+    <section class="deadlines">
+      <div class="container">
+        <h2 class="section-title">Prochaines Échéances</h2>
+        <div class="deadlines-container">
+          <div class="deadline-card">
+            <div class="deadline-date">31 Mai</div>
+            <div class="deadline-content">
+              <h3>Déclaration Mensuelle de TVA</h3>
+              <p>Pour les entreprises avec un chiffre d'affaires > 1 million de dirhams</p>
+            </div>
+          </div>
+          <div class="deadline-card">
+            <div class="deadline-date">30 Juin</div>
+            <div class="deadline-content">
+              <h3>Paiement du 2ème Acompte IS</h3>
+              <p>Pour toutes les sociétés soumises à l'Impôt sur les Sociétés</p>
+            </div>
+          </div>
+          <div class="deadline-card">
+            <div class="deadline-date">31 Juillet</div>
+            <div class="deadline-content">
+              <h3>Dépôt des États de Synthèse</h3>
+              <p>Pour les entreprises clôturant leur exercice au 31 décembre</p>
+            </div>
+          </div>
+        </div>
+        <div class="view-all">
+          <a href="echeances.html" class="btn btn-outline">Voir toutes les échéances</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>ComptaMaroc</h3>
+          <p>Guide complet de la comptabilité marocaine pour les professionnels et étudiants.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plan-comptable.html">Plan Comptable</a></li>
+            <li><a href="echeances.html">Échéances Fiscales</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="depot-bilan.html">Dépôt de Bilan</a></li>
+            <li><a href="ressources.html">Ressources Utiles</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© <span id="current-year"></span> ComptaMaroc. Tous droits réservés.</p>
+        <p>Conçu avec passion pour les professionnels de la comptabilité au Maroc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
 </html>
