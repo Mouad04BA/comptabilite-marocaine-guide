@@ -99,7 +99,7 @@ const Echeances = () => {
         periode: "Trimestrielle",
         actions: [
           {
-            titre: "Déclaration et paiement pour CA < 1 000 000 MAD",
+            titre: "Déclaration et paiement pour CA &lt; 1 000 000 MAD",
             description: "Pour les contribuables dont le chiffre d'affaires est inférieur à 1 million de dirhams",
             dates: "Avant le 20 du premier mois de chaque trimestre",
           },
